@@ -79,6 +79,7 @@ button {
 	height:128px;
 	position:relative;
 	margin:0 auto;
+	transition:all 0.3s ease;
 	perspective:1000px;
 }
 
