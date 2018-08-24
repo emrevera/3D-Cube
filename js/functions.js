@@ -16,8 +16,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
 		let updatedScale = /scale\(([0-9\.]+)\)/gi.exec(element.parentNode.style.transform);
 
-		console.log("es este" , element.parentNode.style.transform);
-
 		return {
 			'positionX': updatedPosition[1],
 			'positionY': updatedPosition[2],
@@ -51,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function(){
 	}
 	
 	let sliders = document.querySelectorAll('input[name="rx"],input[name="ry"],input[name="scale"]');
-	sliders.forEach(slider => slider.addEventListener('mousedown', updateElementXY));
-	sliders.forEach(slider => slider.addEventListener('mousemove', updateElementXY));
+	sliders.forEach(slider => slider.addEventListener('input', updateElementXY));
 
 });
