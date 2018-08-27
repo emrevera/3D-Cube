@@ -1,1 +1,3 @@
-# 3D-Cube
+# Rotating 3D Cube
+
+This is just a CSS 3D which you can control the rotation using Js.
